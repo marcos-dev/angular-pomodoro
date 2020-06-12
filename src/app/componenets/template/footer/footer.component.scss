@@ -1,0 +1,14 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+    display: flex
+}
+
+.footer .copyright{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.right-icon{
+    padding: 0 14px;
+}

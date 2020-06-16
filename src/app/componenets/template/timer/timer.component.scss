@@ -1,0 +1,53 @@
+
+.timer {
+    position: relative;
+}
+
+.timer svg {
+    max-width: 300px;
+}
+
+.timer circle {
+    transition: stroke-dashoffset 1s;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+.timer > .time {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -32px);
+    text-align: center;
+}
+
+.timer h1 {
+    font-size: 60px;
+    font-weight: 300;
+    color: #C2185B;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.timer p {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #bbb;
+    letter-spacing: 3px;
+    margin: 10px 0 0;
+}
+
+.timer button{
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+
+    .mat-icon {
+      font-size: 48px;
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+    }
+}
+
+

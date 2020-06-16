@@ -1,6 +1,7 @@
 .header {
     display: flex;
     align-items: center;
+    font-weight: 400;
 }
 
 .header a {
@@ -11,6 +12,10 @@
 
 .header .logo {
     max-height: 32px;
+}
+
+.header .title{
+    margin-left: 10px;
 }
 
 .right-icon{

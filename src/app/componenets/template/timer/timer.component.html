@@ -1,0 +1,28 @@
+<div class="timer">
+    <svg width="100%" [attr.viewBox]="vb">
+        <circle stroke="#494949 " fill="#303030" [attr.stroke-width]="stroke" [attr.r]="normalizedRadius" [attr.cx]="radius"
+            [attr.cy]="radius" />
+        <circle stroke="#C2185B" fill="transparent" [attr.stroke-width]="stroke"
+            [style.strokeDasharray]="circumference + ' ' + circumference" [style.strokeDashoffset]="strokeDashoffset"
+            [attr.r]="normalizedRadius" [attr.cx]="radius" [attr.cy]="radius" />
+    </svg>
+    <div class="time">
+        <h1>
+            {{formatTime(time)}}
+        </h1>
+        <br>
+        <p>{{getStatus()}}</p>
+    </div>
+    <br>
+    <div class="controls">
+        <button mat-icon-button aria-label="Start timer" color="primary" (click)="startTimer()">
+            <mat-icon>play_arrow</mat-icon>
+        </button>
+        <button mat-icon-button aria-label="Stop timer" color="primary" (click)="resetTimer()">
+            <mat-icon>stop</mat-icon>
+        </button>
+        <button mat-icon-button aria-label="Stop timer" color="primary" (click)="pauseTimer()">
+            <mat-icon>pause</mat-icon>
+        </button>
+    </div>
+</div>

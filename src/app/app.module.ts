@@ -11,12 +11,14 @@ import { MatToolbarModule } from '@angular/material/toolbar'
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { FooterComponent } from './componenets/template/footer/footer.component';
+import { TimerComponent } from './componenets/template/timer/timer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    TimerComponent
   ],
   imports: [
     BrowserModule,

@@ -4,6 +4,9 @@
         <mat-icon>schedule</mat-icon>
         <span class="title">Pomodoro </span>
         <span class="spacer-right"></span>
+        <button mat-icon-button aria-label="Seelect Time" class="right-icon" (click)="setTime()">
+            <mat-icon>timer</mat-icon>
+        </button>
         <button mat-icon-button aria-label="Sound" class="right-icon" (click)="switchSound()">
             <mat-icon *ngIf="!mute">volume_up</mat-icon>
             <mat-icon *ngIf="mute">volume_off</mat-icon>

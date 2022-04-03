@@ -15,13 +15,13 @@
     </div>
     <br>
     <div class="controls">
-        <button mat-icon-button aria-label="Start timer" color="primary" (click)="startTimer()">
+        <button mat-icon-button aria-label="Start timer" *ngIf="!getStatus() || getStatus() != 'Running'" color="primary" (click)="startTimer()">
             <mat-icon>play_arrow</mat-icon>
         </button>
-        <button mat-icon-button aria-label="Stop timer" color="primary" (click)="resetTimer()">
-            <mat-icon>stop</mat-icon>
+        <button mat-icon-button aria-label="Rset timer" *ngIf="getStatus() === 'Running'"  color="primary" (click)="resetTimer()">
+            <mat-icon>replay</mat-icon>
         </button>
-        <button mat-icon-button aria-label="Stop timer" color="primary" (click)="pauseTimer()">
+        <button mat-icon-button aria-label="Pause timer" *ngIf="getStatus() === 'Running'" color="primary" (click)="pauseTimer()">
             <mat-icon>pause</mat-icon>
         </button>
     </div>

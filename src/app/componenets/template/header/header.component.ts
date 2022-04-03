@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-header',
@@ -8,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   mute: boolean = false;
+  toppingList: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
 
   constructor() { }
 
@@ -15,8 +17,12 @@ export class HeaderComponent implements OnInit {
   }
 
   //Turn on sound or mute
-  switchSound(){
+  switchSound() {
     //TODO: Ativar ou desativar alarme
     this.mute = !this.mute;
+  }
+
+  setTime() {
+
   }
 }

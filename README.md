@@ -11,7 +11,7 @@
 
 ## :information_source: Sobre
 
-Projeto de um temporizador Pomodoro em Angular 
+Projeto de um temporizador Pomodoro em Angular <br>
 Pomodoro timer project built with Angular 
 
 ## :rocket: Tecnologias

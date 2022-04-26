@@ -1,5 +1,5 @@
 <h1 align="center">
-   <span>ANGULAR POMODORO</span>
+  <g-emoji class="g-emoji" alias="tomato" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f345.png">🍅</g-emoji> <span>ANGULAR POMODORO</span>
 </h1>
 
 <h3 align="center">  

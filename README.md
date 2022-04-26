@@ -16,9 +16,9 @@ Pomodoro timer project built with Angular
 
 ## :rocket: Tecnologias
 
-HTML
-CSS
-Typescript
+HTML<br>
+CSS<br>
+Typescript<br>
 
 ## :gear: Ferramentas
 
